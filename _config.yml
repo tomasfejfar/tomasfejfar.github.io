@@ -22,6 +22,8 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   enable_coderay: false
+  syntax_highlighter: rouge
+  line_numbers: true
 
 
 # Octopress
@@ -42,8 +44,8 @@ titlecase: false
 owner:
   name: Tomáš Fejfar
   avatar: bio-photo.jpg
-  bio: "Describe your self."
-  email:
+  bio: "Web developer"
+  email: tomas.fejfar@gmail.com
   disqus-shortname:
   twitter: tomasfejfar
   facebook: tomasfejfar
@@ -72,4 +74,4 @@ owner:
   codepen: #username
 
 include: [".htaccess"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", ".idea"]
