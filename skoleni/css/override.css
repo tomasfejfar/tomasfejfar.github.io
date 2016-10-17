@@ -3,6 +3,10 @@
     max-width: 128px;
 }
 
+.side {
+    text-align: center;
+}
+
 em {
     background-color: #ffcd00;
     font-style: normal;
