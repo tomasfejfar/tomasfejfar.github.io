@@ -17,12 +17,12 @@
 
 <body>
 
-    <div class="container">
+    <div class="container" itemscope itemtype="http://schema.org/SocialEvent">
         <div class="header clearfix">
             <nav>
                 <ul class="nav nav-pills float-right">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" itemprop="url" href="https://www.tomasfejfar.cz/svatba">Vítejte</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
@@ -31,26 +31,17 @@
             </nav>
         </div>
 
-        <div class="jumbotron">
-            <h1 class="display-3"><strong>Tom a Lenka<br/> se berou!</strong></h1>
-            <p class="lead">A tady se dozvíte všechno potřebné k tomu, abyste se toho mohli zúčastnit! </p>
-            <p><a class="btn btn-lg btn-success" href="#" role="button">Směle do toho!</a></p>
+        <div class="jumbotron text-right" style="background: url('header.jpg');background-position: 50% 50%">
+            <span itemprop="description" content="Tak už se berou!"></span>
+            <span itemprop="endDate" content="2017-06-17T23:59"></span>
+            <span itemprop="startDate" content="2017-06-17T14:00"></span>
+            <span itemprop="url" href="https://www.tomasfejfar.cz/" rel="author"></span>
+            <h1 class="display-3" itemprop="name" style="margin: 0 0 2.5em;"><strong>Tom a Lenka<br/> se berou!</strong>
+            </h1>
         </div>
 
         <div class="row">
             <div class="col-12">
-
-                <!-- Add this code to event page: -->
-                <div itemscope itemtype="http://schema.org/Event">
-                    <meta itemprop="description" content="Tak už se berou!">
-                    <meta itemprop="startDate" content="2017-06-17T14:00">
-                    <meta itemprop="endDate" content="2017-06-17T23:59">
-                    <link itemprop="url" href="https://www.tomasfejfar.cz/" rel="author"/>
-                    <a itemprop="url" href="https://www.tomasfejfar.cz/svatba"><span itemprop="name" style="display:block;"><strong>Svatba Tomáš & Lenka</strong></span></a>
-                    <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                        <span itemprop="streetAddress" style="display:block;">Address</span>
-                    </div>
-                </div>
 
                 <h2>Zásadní informace</h2>
                 <h3>Kdy?</h3>
@@ -58,51 +49,75 @@
 
                 <h3>Kde?</h3>
                 <p>V kostele Dr.&nbsp;Farského v Jablonci nad Nisou.
-                    <sup><a href="#kostel">Jak se tam dostanu?</a></sup></p>
+                    <sup><a href="#kostel">Jak se tam dostanu?</a></sup>
+                </p>
                 <h3>Jak to bude probíhat?</h3>
-                <p>V sobotu po obědě se setkáme v <a href="#kostel">kostele</a>, kde proběhne obřad (~ 90 minut). Pak se přesuneme na <a href="#fara">faru ČCE</a>, kde bude připravené posezení a pohoštění, kde bude příležitost si sednou a popovídat. </p>
+                <p>V sobotu po obědě se setkáme v
+                    <a href="#kostel">kostele</a>, kde proběhne obřad (~90 minut). Pak se pěšky přesuneme na
+                    <a href="#fara">faru ČCE</a> (~500m), kde bude připravené
+                    <a href="#posezeni">posezení</a> a bude příležitost si popovídat a něco dobrého sníst. Takto setrváme po zbytek dne, přibližně do půlnoci. Nebudeme to táhnout až do rána, protože hned druhý den ráno nás čeká
+                    <a href="#sjizdeni-jizery">svatební sjíždění Jizery z Podspálova</a>.
+                </p>
 
                 <h2>Obřad</h2>
-                <p></p>
-                <h2>Posezení</h2>
-                <p></p>
+                <p>Obřad proběhne v kostele Dr. Farského na stejnojmenném náměstí v Jablonci. Bude církevní, takže na polibek si počkáte poctivých 60 minut. Jestli jste ještě nikdy žádný církevní obřad nezažili, tak doufáme, že se vám bude líbit. Nemusíte nic speciálního "umět" nebo "znát", stačí, když zvládnete vstát ve stejnou chvíli jako ostatní. V kostele může být i v létě trochu chladno, takže speciálně dámy nezapomenou na nějaký lehký přehoz. Co se týče oblečení, tak se kostela nebojte. Zahalená ramena jsou vhodná, nikoli však nutná, minisukně podobně. Po obřadu proběhne nezbytné focení. A pak se pěšky přesuneme na faru. </p>
+                <h4>Co si vzít na sebe do kostela?</h4>
+                <p>Ještě nikdy jste nebyli na svatbě v kostele a nevíte, co na sebe? Tady je několik jednoduchých pravidel, která by bylo fajn dodržet. </p>
+                <p>Pro dámy</p>
+                <ul>
+                    <li>jsou vhodná zahalená ramena</li>
+                    <li>jsou nevhodné miniminisukně</li>
+                </ul>
+                <p>Pro pány</p>
+                <ul>
+                    <li>nejsou vhodné džíny a tenisky</li>
+                </ul>
+                <p><em>Pokud něco z toho nezvládnete dodržet, svět se nezboří. </em></p>
+                <h2 id="#posezeni">Posezení</h2>
+                <p>Fara je od kostela vzdálená asi 500m, tedy docházková vzdálenost. K dispozici bude i auto, které vás může odvézt, takže se nebojte, pokud jsou pro vás přesuny problém. </p>
+                <p>Bude na nás čekat spousta jídla a pití, které bychom měli do večera zkonzumovat. Omezili jsme v poslední době pití alkoholu, takže jsme se rozhodli, že tomu přizpůsobíme i svatbu a žádný alkohol tam nebude. </p>
                 <h2>Svatební zvyky</h2>
-                <p>Tady to bude rychlé - nebudou. Rozbíjení talířů, jedení polévky, házení věcmi a speciálně unášení nevěsty se přísně zapovídá. </p>
+                <p>Tady to bude rychlé - nebudou. Rozbíjení talířů, jedení polévky, házení věcmi a
+                    <strong>speciálně unášení nevěsty se přísně zapovídá</strong> (protože se nevěsta bude bránit a mohli byste jí ublížit).
+                </p>
                 <h2>Svatební dary</h2>
-                <p>Momentálně s Lenkou bydlíme v tak malém bytě, že když do něj něco </p>
+                <p>Momentálně bydlíme v tak malém bytě, že když do něj něco chceme přidat, tak na druhém konci musíme něco vyhodit. A nám se naše věci líbí a vyhazovat je nechceme. Takže vás snažně prosíme, abyste nám nedávali papiňáky, keramické jeleny, pánve, vrtačky, sady hrnků, ručníků ani nic podobného. Úplně nejspokojenější budeme, když nám finančně přispějete na náklady spojené se svatbou. To, co zbude, s Lenkou procestujeme. Případně nám místo svatebního daru můžete pomoci s přípravou svatby. </p>
+                <h2>Sjíždění Jizery</h2>
+                <p>V neděli brzy ráno vyjíždíme na kánoích z Podspálova od elektrárny na plavbu směrem na Zrcadlovou kozu. Pokud tam zdárně doplujem, tak postavíme stany a založíme oheň a budeme se veselit, dokud neusneme. Druhý den se, pokud se nám podaří vstát, pokusíme dojet do Svijan. </p>
                 <h2>Jak se dostanu na místo?</h2>
-                <dl>
-                    <dt id="kostel">Kostel</dt>
+                <dl itemprop="location" itemscope itemtype="http://schema.org/Place">
+                    <dt id="kostel">
+                        <span itemprop="name">Kostel Dr. Farského</span></dt>
                     <dd>
                         <ul>
-                            <li>náměstí Dr. Farského</li>
-                            <li>GPS: 50.7237661N, 15.1735114E</li>
-                            <li>Mapa:
-                                <a href="https://mapy.cz/zakladni?x=15.1735115&y=50.7235692&z=17&source=base&id=1720601">Mapy.cz</a>
+                            <li itemprop="address" itemscope itemtype="http://schema.org/PostalAddress ">
+                                <span itemprop="streetAddress">náměstí Dr. Farského, Jablonec nad Nisou</span></li>
+                            <li>
+                                <a itemprop="hasMap" href="https://mapy.cz/zakladni?x=15.1735115&y=50.7235692&z=17&source=base&id=1720601">Mapy.cz</a>, GPS:
+                                <span itemprop="geo" itemscope itemtype="http://schema.org/GeoCoordinates"><span itemprop="latitude">50.7237661N</span>,
+                                <span itemprop="longitude">15.1735114E</span></span>
                             </li>
-                            <li>Je to velký kostel naproti Eurocentru. Místní možná budou znát spíš Eurocentrum, než ten kostel.</li>
+                            <li itemprop="description">Je to velký kostel naproti Eurocentru. Místní možná budou znát spíš Eurocentrum, než ten kostel.</li>
                         </ul>
                     </dd>
                     <dt>Posezení na faře</dt>
                     <dd>
                         <ul>
                             <li>Pod Baštou 10, Jablonec nad Nisou</li>
-                            <li>GPS: 50.7237661N, 15.1735114E</li>
-                            <li>Mapa:
-                                <a href="https://mapy.cz/zakladni?x=15.1728248&y=50.7256186&z=17&source=firm&id=404562">Mapy.cz</a>
+                            <li>
+                                <a href="https://mapy.cz/zakladni?x=15.1728248&y=50.7256186&z=17&source=firm&id=404562">Mapy.cz</a>, GPS: 50.7237661N, 15.1735114E
                             </li>
                             <li>Nejlépe se tam asi dostanete z Horního náměstí (místní mu říkají od soudružských dob "Ruďák") odbočkou mezi kostelem a letním kinem.</li>
                         </ul>
                     </dd>
                 </dl>
-                <h3>Svatbní sjíždění Jizery</h3>
+                <h3>Svatební sjíždění Jizery</h3>
                 <dl>
-                    <dt>Začátek v Podspálově</dt>
+                    <dt id="podspalov">Začátek v Podspálově</dt>
                     <dd>
                         <ul>
-                            <li>GPS: 50.6337592N, 15.2999389E</li>
-                            <li>Mapa:
-                                <a href="https://mapy.cz/zakladni?x=15.3025054&y=50.6323386&z=16&source=base&id=2061795">Mapy.cz</a>
+                            <li>
+                                <a href="https://mapy.cz/zakladni?x=15.3025054&y=50.6323386&z=16&source=base&id=2061795">Mapy.cz</a>, GPS: 50.6337592N, 15.2999389E
                             </li>
                             <li>Doporučujeme přijet vlakem od Železného Brodu.</li>
                         </ul>
@@ -111,16 +126,24 @@
                     <dd>
                         <ul>
                             <li>Turnov, Loužek 7</li>
-                            <li>GPS: 50.6023639N, 15.1829297E</li>
-                            <li>Mapa:
-                                <a href="https://mapy.cz/zakladni?x=15.1829297&y=50.6021665&z=17&source=firm&id=1507008">Mapy.cz</a>
+                            <li>
+                                <a href="https://mapy.cz/zakladni?x=15.1829297&y=50.6021665&z=17&source=firm&id=1507008">Mapy.cz</a>, GPS: 50.6023639N, 15.1829297E
                             </li>
                             <li>Příjezd je nejlepší asi od Turnova. Dá se dojet i do Dolánek, ale příchod je pak delší a pěší.</li>
                         </ul>
                     </dd>
                 </dl>
-                <h2>Jak můžu pomoct?</h2>
-                <p>I když je celá svatba (ostatně jako celý náš život) docela minimalistická, tak s ní bude spousta práce. Budeme rádi, když nám pomůžete s organizací. </p>
+                <h2 id="pomoc">Jak můžu pomoct?</h2>
+                <p>I když je celá svatba (ostatně jako celý náš život) docela minimalistická, tak s ní bude spousta práce. Budeme rádi, když nám pomůžete. Dejte nám prosíme nejdřív vědět, abychom věděli s čím můžeme počítat! Na výběr je hned několik možností:</p>
+                <ul>
+                    <li>Můžete něco upéct nebo uvařit a dovézt to na raut</li>
+                    <li>Můžete nám den předem pomoct připravit kostel a faru</li>
+                    <li>Můžete nam v sobotu večer pomoct uvést faru do původního stavu</li>
+                    <li>Můžete pomoct s přípravou jídla a pití na místě</li>
+                </ul>
+
+                <h2>Kontakty</h2>
+                <p>Pište Tomášovi na mail (tomas.fejfar@gmail.com) nebo na telefon (+420 777983725)</p>
             </div>
         </div>
 
