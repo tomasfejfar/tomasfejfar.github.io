@@ -102,6 +102,8 @@
                         <a href="#jak-na-misto">→</a></li>
                     <li><strong>22.4.2017</strong>: Přidali jsme informace o kouření
                         <a href="#posezeni">→</a></li>
+                    <li><strong>22.4.2017</strong>: Přidán kontakt na svatebního koordinátora Šimona
+                        <a href="#kontakt" class="btn btn-link">→</a></li>
                 </ul>
 
                 <h2 id="zasadni-info">Zásadní informace</h2>
@@ -252,9 +254,19 @@ output=xml
                 </ul>
 
                 <h2 id="kontakt">Kontakty</h2>
-                <p>Pište Tomášovi na mail (<a href="mailto:tomas.fejfar@gmail.com">tomas.fejfar@gmail.com</a>) nebo na telefon (<a href="tel:+420777983725">+420 777 983 725</a>). Každopádně vždycky budou aktuální informace tady.
+                <p>S organizačními dotazy <strong>několik dní přes svatbou a v den svatby</strong> prosíme pište našemu svatebnímu koordinátorovi Šimonovi. </p>
+                <p >Pokud máte nějaké další dotazy, pište Tomášovi na mail (<a href="mailto:tomas.fejfar@gmail.com">tomas.fejfar@gmail.com</a>) nebo na telefon (<a href="tel:+420777983725">+420 777 983 725</a>). Každopádně vždycky budou aktuální informace tady.
                 </p>
+                <div id="simon">
+                    <h3>Svatební koordinátor Šimon Matějovský</h3>
+                    <a href="simon1.jpg"  data-src="simon1.jpg"  class="lightbox"><img src="simon1.jpg" alt="" style="height: 10em; float: left;margin-right: 2em;"></a>
+                    <ul>
+                        <li>mobil: <a href="tel:+420 721 131 782">+420 721 131 782</a></li>
+                        <li>email: <a href="mailto:matejovskysimon@seznam.cz">matejovskysimon@seznam.cz</a></li>
+                    </ul>
+                </div>
 
+                <hr style="clear: both;visibility: hidden;"/>
                 <div><h2 id="fotky">Fotky</h2>
                     <!--gallery-->
 <div class="grid">
@@ -582,6 +594,9 @@ output=xml
         });
         $grid.lightGallery({
             selector: '.link'
+        });
+        $('#simon').lightGallery({
+            selector: '.lightbox'
         });
 
     });</script>
