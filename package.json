@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "npm-run-all --parallel watch serve-dist",
-    "copy-html": "copyfiles -f src/extras/*.html dist",
+    "copy-html": "copyfiles -f src/index.html dist",
     "copy-images": "copyfiles -u 3 src/extras/images/**/**/**/* dist/images/",
     "css": "npm-run-all css-compile css-prefix css-minify",
     "css-compile": "npm-run-all css-compile:main css-compile:extras css-compile:demo",
@@ -23,10 +23,10 @@
     "js-minify:main": "uglifyjs --compress --mangle --output dist/js/shards.min.js dist/js/shards.js",
     "serve-dist": "browser-sync start --server \"./dist\" --files \".\" --no-open --no-online --no-notify",
     "watch": "npm-run-all --parallel watch-css watch-html watch-images watch-js",
-    "watch-css": "nodemon --ignore src/js --ignore dist/ -e scss -x \"npm run css\"",
-    "watch-html": "nodemon --ignore src/js --ignore src/scss --ignore src/extras/js --ignore src/extras/scss --ignore dist/ -e html -x \"npm run copy-html\"",
-    "watch-images": "nodemon --ignore src/js --ignore src/scss --ignore src/extras/js --ignore src/extras/scss --ignore dist/ -e jpg,jpeg,png -x \"npm run copy-images\"",
-    "watch-js": "nodemon --ignore src/scss --ignore dist/ -e js -x \"npm run js\""
+    "watch-css": "nodemon --watch src/scss -e scss -x \"npm run css\"",
+    "watch-html": "nodemon --watch src -e html -x \"npm run copy-html\"",
+    "watch-images": "nodemon --watch src/images  -e jpg,jpeg,png -x \"npm run copy-images\"",
+    "watch-js": "nodemon --watch src/js -e js -x \"npm run js\""
   },
   "repository": {
     "type": "git",
@@ -38,6 +38,10 @@
     "browser-sync": "^2.18.13",
     "clean-css-cli": "^4.1.6",
     "copyfiles": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
     "node-sass": "^4.5.3",
     "nodemon": "^1.11.0",
     "npm-run-all": "^4.0.2",
