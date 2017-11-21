@@ -110,3 +110,22 @@ abbr {
 .reference {
     
 }
+
+/* custom */
+
+.skoleni ul {
+    margin: .25em 0;
+    padding: 0 0 0 1em;
+}
+
+.skoleni ul li {
+    list-style-type: disc;
+}
+
+.skoleni p {
+    margin: 0;
+}
+
+.skoleni p+p {
+    margin: 0 0 20px 0;
+}

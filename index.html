@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="cs">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="description" content="Organizuji školení gitu, školení PhpStormu a konzultace efektivního vývoje v týmu. Zabývám se také zakázkovým vývojem v PHP. Můžu pracovat jak samostatně, tak v týmu dalších freelancerů nebo jako součást vašeho interního týmu. ">
@@ -7,198 +7,269 @@
         Tomáš Fejfar, PHP vývojář a lektor webového vývoje
     </title>
 
-    <link rel="stylesheet" media="screen,projection,tv" href="css/toast.css" type="text/css">
-    <link rel="stylesheet" media="screen,projection,tv" href="css/reset.css" type="text/css">
-    <link rel="stylesheet" media="screen,projection,tv" href="css/text.css" type="text/css">
-    <link rel="stylesheet" media="screen,projection,tv" href="css/screen.css" type="text/css">
-    <link rel="stylesheet" media="print" href="css/print.css" type="text/css">
-    <script type="text/javascript" src="js/jquery.min.js">
-    </script>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <style>
+        .highlight {
+            background: #ffcd00;
+            color: #212529;
+        }
+
+        .jumbotron {
+            background-color: #f2f5f7;
+        }
+
+        .pehapkari-svg {
+            vertical-align: bottom;
+
+        }
+
+        .lead {
+            font-weight: 400;
+        }
+
+        .jumbotron h1 {
+            font-weight: 400;
+        }
+
+        .reference .media-body p {
+            font-style: italic;
+        }
+    </style>
 </head>
 
 <body>
-<div class="container">
-    <div class="unit span-grid" id="header">
-        <h1>Tomáš Fejfar</h1>
 
-        <p class="slogan">PHP vývojář a lektor webového vývoje</p>
-    </div>
-    <div class="unit span-grid">
-        <h2>Projekty v PHP, Zend Frameworku a Symfony</h2>
-        <p>Zabývám se zakázkovým vývojem v PHP. Můžu pracovat jak samostatně, tak v týmu dalších freelancerů nebo jako součást vašeho interního týmu. </p>
-        <h2>Organizuji školení gitu, školení PhpStormu a konzultace efektivního vývoje v týmu</h2>
-        <p>Dokážu poradit jak se samotným používáním gitu, tak s nástrahami se kterými je přechod na git spojen. Pomůžu vám zavést efektivní správu kódu. Naučím vás používat PhpStorm na maximum tak, aby vám ulehčil práci. A rád vám předám své znalosti fungování vývojářského týmu, spolupráce, code review a dalších. </p>
+    <header class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
+        <a class="navbar-brand" href="#top">Tomáš Fejfar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    </div>
-    <div class="unit one-of-three">
-        <h2>Kontakt</h2>
-        <dl>
-            <dt>E-mail</dt>
-            <dd><a class="email" href="mailto:tomas.fejfar&#64;gmail.com">tomas.fejfar&#64;<!---->gmail.com</a></dd>
-            <dt>Telefon</dt>
-            <dd><span class="tel">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="navbar-nav-scroll">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skoleni">Veřejná školení</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#firemni">Firemní konzultace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#oMne">O mně</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <a id="top"></a>
+    <div class="container">
+        <hr class="invisible">
+        <div class="jumbotron">
+            <img class="float-lg-right img-thumbnail rounded-circle d-none d-lg-block" src="images/me.jpg">
+            <h1 class="display-3">Tomáš Fejfar</h1>
+            <h2 class="mb-5">
+                <small class="text-muted">PHP vývojář a&nbsp;lektor webového vývoje</small>
+            </h2>
+            <p class="lead">Jsem specialista na webové aplikace v&nbsp;PHP a&nbsp;ve světě PHP se pohybuji už víc jak 12 let. Celou tu dobu jsem pracoval na reálných projektech, které vydělávaly peníze. V&nbsp;praxi jsem používal Elastic Search, RabbitMQ, Doctrine nebo Symfony. Znalosti, které jsem během své práce nasbíral, předávám dál. </p>
+        </div>
+        <ul class="lead mb-5">
+            <li>Potřebujete poradit, jak zlepšit fungování vývojového týmu? Nebo chcete vývojářům pomoci získat nové znalosti? Podívejte se, jaké nabízím
+                <a href="#firemni" class="highlight">firemní konzultace a&nbsp;školení</a>.
+            </li>
+            <li>Pokud se chcete sami zdokonalit, podívejte se na
+                <a href="#skoleni" class="highlight">veřejná školení</a>.
+            </li>
+            <li>Můžete si přečíst, <a href="#reference" class="highlight">co o&nbsp;mně říkají ostatní</a></li>
+            <li>A&nbsp;pokud do firmy sháníte seniorního PHP vývojáře, podívejte se, jestli
+                <a href="#oMne" class="highlight">nehledáte právě mě</a>.
+            </li>
+        </ul>
+        <a class="" name="skoleni"></a>
+        <h2>Veřejná školení</h2>
+
+        <p> Věřím, že jedno intenzivní školení nebo workshop dá člověku mnohem víc, než mnoho hodin čtení tutoriálů a&nbsp;sledování videí. Na školení máte možnost položit doplňující otázky, vyzkoušet si probírané věci a&nbsp;dostat okamžitou zpětnou vazbu. Nejasnosti si můžeme vysvětlit přímo na vašem konkrétním projektu. To je to, co odlišuje školení od ostatních forem vzdělávání.</p>
+
+        <div class="row mb-4">
+            <div class="col-lg-6">
+                <div class="card ">
+                    <div class="card-body">
+                        <h4 class="card-title">Ovládni PhpStorm</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">od základů po profi tipy</h6>
+                        <p class="card-text">Pro nás vývojáře je IDE hlavní pracovní nástroj, a&nbsp;proto se vyplatí ho perfektně znát. Na workshopu se naučíte využívat možnosti, které PhpStorm nabízí, a&nbsp;společně si všechno vyzkoušíme. S&nbsp;nově získanými znalostmi vám půjde práce od ruky a&nbsp;vyhnete se i častým chybám z&nbsp;nepozornosti.</p>
+                        <ul>
+                            <li>Jak <strong>efektivně pracovat s&nbsp;kódem</strong> a&nbsp;najít to, co potřebujete
+                            </li>
+                            <li>Jak využívat <strong>automatické refaktoringy</strong> a&nbsp;na co si u nich dát pozor
+                            </li>
+                            <li>Jak si ušetřit psaní pomocí předpřipravených templatů a&nbsp;formátování</li>
+                            <li>Jak integrovat <strong>externí nástroje</strong> s&nbsp;PhpStormem</li>
+                            <li>Jak v&nbsp;PhpStormu testovat</li>
+                            <li><strong>Nastavení na míru</strong> vašemu projektu</li>
+                        </ul>
+                        <p class="text-muted">Připravuji ve spolupráci s
+                            <img src="images/line.svg" class="pehapkari-svg"> Péhápkaři.cz</p>
+                        <a href="https://pehapkari.cz/vzdelavej-se/#ovladni-phpstorm-ndash-od-zakladu-po-profi-tipy" class="card-link btn btn-primary">Informace a&nbsp;přihlášení</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 id="firemni">Firemní školení, workshopy a&nbsp;konzultace</h2>
+
+        <p>Pokud máte speciální požadavky, připravím pro vás školení, workshop nebo vám pomůžu s&nbsp;konkrétním problémem. Spolupráce probíhá typicky ve dvou krocích. Nejprve se sejdeme a&nbsp;probereme problémy, se kterými se potýkáte. V&nbsp;návaznosti na to upravím
+            <strong>obsah přesně na míru vašim potřebám</strong>, aby bylo školení maximálně přínosné. </p>
+
+        <div class="row mb-4">
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Automatizace procesů ve vývoji</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Nechte pracovat stroje!</h6>
+                        <p class="card-text">Na každém projektu a&nbsp;v&nbsp;každé firmě je množství věcí, které děláte ručně. Jejich automatizací můžete nejen ušetřit, ale uvolníte zaměstnancům čas na důležitější činnosti, které počítače zatím nezvládnou.</p>
+                        <ul>
+                            <li>Dozvíte se, <strong>proč vůbec automatizovat</strong></li>
+                            <li>Ukážeme si, <strong>jak najít vhodné činnosti</strong> ke zautomatizování</li>
+                            <li>Seznámíte se s&nbsp;<strong>nástroji</strong>, které můžete k&nbsp;automatizování použít
+                            </li>
+                            <li>Projdeme konkrétní činnosti, které byste mohli automatizovat</li>
+                            <li>Zkusíme si zautomatizovat některou z&nbsp;činností</li>
+                        </ul>
+                        <p>I po školení jsem k&nbsp;dispozici pro konkrétní dotazy a&nbsp;ve složitějších případech se můžeme domluvit na placené konzultaci.</p>
+                        <a href="mailto:tomas.fejfar@gmail.com?subject=Automatizace procesů ve vývoji" class="card-link btn btn-primary">Napište mi a&nbsp;domluvíme se</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card ">
+                    <div class="card-body">
+                        <h4 class="card-title">Vyvíjej líp! </h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Best practices pro práci ve vývojovém týmu</h6>
+                        <p class="card-text">Chtěli byste psát lepší kód? Mít na produkci míň bugů? Nebát se "velkého deploye"? Pokud ano, tak tohle školení je přesně pro vás. Dozvíte se prověřené postupy na code review, nastavení coding standardů nebo workflow pro verzování.</p>
+                        <ul>
+                            <li>Podíváme se na způsob, kterým aktuálně vyvíjíte</li>
+                            <li>Ukážeme si <strong>techniky a&nbsp;nástroje</strong>, které vám můžou pomoct</li>
+                            <li>Povíme si, <strong>jak dělat code review</strong> tak, aby to k&nbsp;něčemu bylo</li>
+                            <li>Vyvětráme dusno okolo tabulátorů, zalamování položek pole a&nbsp;dalších</li>
+                            <li>Ukážeme si, <strong>co z&nbsp;toho není potřeba dělat ručně</strong></li>
+                        </ul>
+                        <p>Nebudu se vám snažit vnutit můj postup, protože vím, že každá firma je jiná. Místo toho to zkusíme společně vymyslet tak, aby vám to vyhovovalo a&nbsp;zapadalo do stylu práce. Upozorním vás na slepé uličky, které jsem už vyzkoušel a&nbsp;řeknu, na co si máte dát pozor. </p>
+                        <a href="mailto:tomas.fejfar@gmail.com?subject=Vyvíjej líp!" class="card-link btn btn-primary">Napište mi a&nbsp;domluvíme se</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-lg-6 ">
+                <div class="card ">
+                    <div class="card-body">
+                        <h4 class="card-title">Vývojáři pracující na dálku</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">&hellip; a&nbsp;jak se z&nbsp;nich nezbláznit</h6>
+                        <p class="card-text">Dobrých vývojářů je jako šafránu, ne-li méně. A&nbsp;jako na potvoru nikdy nežijí tam, kde byste je potřebovali. </p>
+                        <p class="card-text">Zvažujete, jestli tým rozšířit o&nbsp;vývojáře, kteří nebudou sedět v&nbsp;kanceláři, ale máte obavy, jak bude spolupráce fungovat? S&nbsp;prací na dálku mám mnohaleté zkušenosti. Pracoval jsem na dálku jak ve firmě vyvíjející vlastní produkt, tak ve firmě s&nbsp;agenturním stylem práce. Rád se s&nbsp;vámi o&nbsp;nabyté znalosti podělím. </p>
+                        <ul>
+                            <li>Nebudu vám mazat med kolem pusy - <strong>pobavíme se o&nbsp;nevýhodách</strong></li>
+                            <li>Řekneme si, jak vzdálení pracovníci ovlivňují tým</li>
+                            <li>Dozvíte se, co můžete udělat pro to, <strong>aby spolupráce fungovala</strong></li>
+                            <li>A&nbsp;upozorním vás i na
+                                <strong>výhody, které vzdálená spolupráce přináší</strong> pro lidi v&nbsp;kanceláři
+                            </li>
+                        </ul>
+                        <p>Konkurence nejspíš dokáže vašemu vývojáři nabídnout o&nbsp;pár tisíc vyšší plat. Tomu nezabráníte. Ale možnost odjet bez obav na dovolenou, pracovat přes zimu v&nbsp;teple u moře nebo pracovat efektivně čtrnáct dní z&nbsp;domova, když jsou děti nemocné - to nabídnout nejspíš nedokáže.</p>
+                        <a href="mailto:tomas.fejfar@gmail.com?subject=Vývojáři pracující na dálku" class="card-link btn btn-primary">Napište mi a&nbsp;domluvíme se</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="reference">Co o&nbsp;mně říkají ostatní?</h2>
+        <div class="reference">
+            <div class="media">
+
+                <div class="media-body">
+                    <h5 class="mt-0">Michal Hudeček
+                        <small class="text-muted"><a href="http://www.vcelka.cz/">Včelka.cz</a>, účastník školení
+                        </small>
+                    </h5>
+                    <p>Tomáš má dlouholeté zkušenosti s optimalizací vývojářského workflow a umí je srozumitelně předat. Konečně jsme pochopili řadu užitečných Git příkazů, které jsme se báli používat. Školení nás posunulo zase o kus dál v automatizaci našeho workflow.</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-body">
+                    <h5 class="mt-0">Michal Zwinger
+                        <small class="text-muted"><a href="http://www.vcelka.cz/">Včelka.cz</a>, manager</small>
+                    </h5>
+                    <p>Školení od Tomáše bylo připravené přímo pro naše vývojáře tak, aby jim pomohlo s pokročilými Git funkcemi a začít s automatizací deploymentu. Ocenili jsme hlavně praktické návody, které jsme ihned začali používat.</p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-body">
+                    <h5 class="mt-0">Michal Franěk
+                        <small class="text-muted"><a href="http://www.shopio.cz/">Shopio.cz</a>, vlastník</small>
+                    </h5>
+                    <p>Tomáš je člověk, na kterého se při práci na projektech můžu spolehnout. Svoji práci plní samostatně, svědomitě, s ohledem na časové i finanční možnosti projektu, ale nikdy ne otrocky a bezmyšlenkovitě. Diskuse o smysluplnosti a způsobu realizace práce jsou s ním poměrně časté, ale zatím nikdy nebyly zbytečné.</p>
+                    <p>Tomáše jako spolupracovníka i kamaráda mohu jen doporučit.</p>
+                </div>
+            </div>
+            <div class="media">
+
+                <div class="media-body">
+                    <h5 class="mt-0">Martin Hujer
+                        <small class="text-muted"><a href="http://www.martinhujer.cz">martinhujer.cz</a>, kolega</small>
+                    </h5>
+                    <p>S Tomášem jsem pracoval několik let v w3w. Je velmi dobrý vývojář, který se nesoustředí jen na kvalitu technického řešení, ale uvažuje nad úkolem také z pohledu kliena a uživatele. Tomášova snaha o maximální využívání efektivních nástrojů vždycky zvyšuje produktivitu celého týmu.
+                        <small class="text-mute">(přeloženo z anglického originálu)</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <a name="oMne"></a>
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Kontakt</h2>
+                <dl>
+                    <dt>E-mail</dt>
+                    <dd><a class="email" href="mailto:tomas.fejfar&#64;gmail.com">tomas.fejfar&#64;<!---->gmail.com</a>
+                    </dd>
+                    <dt>Telefon</dt>
+                    <dd><span class="tel">
               <span class="type" style="display: none;">cell</span>
               <span class="value">+420 777983725</span>
             </span>
-            </dd>
+                    </dd>
 
-            <dt class="desc">IČ:</dt>
-            <dd>
-                <a href="http://www.rzp.cz/cgi-bin/aps_cacheWEB.sh?VSS_SERV=ZVWSBJFND&Action=Search&ICO=74773950" target="_blank">74773950</a>
-            </dd>
-        </dl>
+                    <dt class="desc">IČ:</dt>
+                    <dd>
+                        <a href="http://www.rzp.cz/cgi-bin/aps_cacheWEB.sh?VSS_SERV=ZVWSBJFND&Action=Search&ICO=74773950" target="_blank">74773950</a>
+                    </dd>
+                </dl>
+            </div>
+            <div class="col-lg-6">
+
+                <h2>Najdete mě na</h2>
+                <ul>
+                    <li><a href="http://blog.tomasfejfar.cz" target="_blank">Blogu</a></li>
+                    <li><a href="https://github.com/tomasfejfar" target="_blank">Githubu
+                        <img src="https://www.github.com/favicon.ico" width="16" height="16"></a></li>
+                    <li><a href="http://cz.linkedin.com/in/tomasfejfar" target="_blank">LinkedIn
+                        <img src="https://www.linkedin.com/favicon.ico" width="16" height="16"></a></li>
+                    <li><a href="http://www.facebook.com/tomas.fejfar" target="_blank">Facebooku
+                        <img src="https://www.facebook.com/favicon.ico" width="16" height="16"></a></li>
+                    <li><a href="http://www.twitter.com/tomasfejfar" target="_blank">Twitteru
+                        <img src="https://www.twitter.com/favicon.ico" width="16" height="16"></a></li>
+                    <li><a href="http://stackoverflow.com/users/112000/tom%C3%A1%C5%A1-fejfar" target="_blank">Stackoverflow
+                        <img src="images/favicon.ico" width="16" height="16"></a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <div class="unit one-of-three">
-        <h2>Najdete mě na</h2>
-        <ul>
-            <li><a href="http://blog.tomasfejfar.cz" target="_blank">Blogu</a></li>
-            <li><a href="https://github.com/tomasfejfar" target="_blank">Githubu
-                <img src="https://www.github.com/favicon.ico" width="16" height="16"></a></li>
-            <li><a href="http://cz.linkedin.com/in/tomasfejfar" target="_blank">LinkedIn
-                <img src="https://www.linkedin.com/favicon.ico" width="16" height="16"></a></li>
-            <li><a href="http://www.facebook.com/tomas.fejfar" target="_blank">Facebooku
-                <img src="https://www.facebook.com/favicon.ico" width="16" height="16"></a></li>
-            <li><a href="http://www.twitter.com/tomasfejfar" target="_blank">Twitteru
-                <img src="https://www.twitter.com/favicon.ico" width="16" height="16"></a></li>
-            <li><a href="http://stackoverflow.com/users/112000/tom%C3%A1%C5%A1-fejfar" target="_blank">Stackoverflow
-                <img src="images/favicon.ico" width="16" height="16"></a></li>
-        </ul>
-    </div>
-
-    <div class="unit one-of-three">
-        <h2>IM</h2>
-        <dl>
-            <dt>Jabber/Hangouts/GTalk</dt>
-            <dd>
-                <code>tomas.fejfar&#64;<!--  -->gmail.com</code>
-            </dd>
-            <dt>Skype</dt>
-            <dd>
-                <code>tomasfejfar</code>
-            </dd>
-        </dl>
-    </div>
-
-
-    <h2 class="unit span-grid">Reference</h2>
-
-    <div class="unit span-grid">
-        Aktuální informace najdete vždy na <a href="https://www.linkedin.com/in/tomasfejfar">LinkedIn
-        <img src="https://www.linkedin.com/favicon.ico" width="16" height="16"></a>.
-    </div>
-    <div class="unit one-of-three">
-        <h3>Školení gitu<span class="year">2015 &rarr; </span></h3>
-        <ul>
-            <li>w3w, s.r.o.</li>
-            <li>MeDitorial, s.r.o.</li>
-        </ul>
-    </div>
-    <div class="unit one-of-three">
-        <h3><a href="http://www.w3w.cz">w3w.cz</a><span class="year">2008 &rarr; 2016</span></h3>
-        <ul>
-            <li>PHP developer</li>
-            <li>práce na ecommerce řešení <a href="http://www.shopio.cz">Shopio</a></li>
-            <li>klienti GE Money, Roche, Člověk v&nbsp;tísni, &hellip;</li>
-        </ul>
-    </div>
-
-
-    <div class="unit one-of-three reference">
-        <h3><a href="http://www.marekbursa.cz">Marek Bursa</a><span class="year">2011</span></h3>
-
-        <p>
-            Pro MUDr. Marka Bursu jsem vytvořil minimalistickou prezentaci, díky které už nemusí
-            diktovat adresu a&nbsp;ordinační hodiny po telefonu :)
-        </p>
-    </div>
-    <div class="unit one-of-three reference">
-        <h3>Termovize.com<span class="year">2009</span></h3>
-
-        <p>
-            Společnost Termovize, zabývající se termovizním měřením
-            v&nbsp;průmyslu i&nbsp;domácnostech, využívá web k&nbsp;osvětě
-            a&nbsp;komunikaci s&nbsp;klienty.
-        </p>
-
-        <p>
-            Projekt už spravuje jiný webdesigner, vzledem k tomu, že jsem neměl dost času se mu plně věnovat.
-        </p>
-    </div>
-    <div class="unit one-of-three reference">
-        <h3><a href="http://www.uzavreno.cz">Uzavřeno.cz</a><span class="year">2006</span></h3>
-
-        <p>
-            Pro Pavla Millera jsem vytvořil web na podporu jeho podnikání v&nbsp;oblasti
-            plastových oken, zasklívání lodžií a&nbsp;hliníkových profilů.
-        </p>
-    </div>
-    <div class="unit one-of-three reference">
-        <h3>Suitup.cz<span class="year">2010</span></h3>
-
-        <p>
-            Trikoshop s&nbsp;kolekcí na motivy oblíbených seriálů How
-            I&nbsp;Met Your Mother a&nbsp;The Big Bang Theory pohání
-            moje ecommerce řešení. (Projekt už není v provozu a doména je prodaná)
-        </p>
-    </div>
-
-    <div class="unit one-of-three reference">
-        <h3><a href="http://www.impresionismus.cz">Impresionismus.cz</a><span class="year">2009</span></h3>
-
-        <p>
-            Obsahově bohaté stránky s&nbsp;minimalistickým designem, jejichž
-            tvorbu jsem si vyloženě užil.
-        </p>
-    </div>
-    <div class="unit one-of-three reference">
-        <h3><a href="http://www.mojevinecko.cz">Mojevinecko.cz</a><span class="year">2009</span></h3>
-
-        <p>
-            Moravská vínečka jako ze sklípku jsou k&nbsp;dostání na dalším
-            z&nbsp;mnou vytvořených eshopů.
-        </p>
-    </div>
-    <div class="unit one-of-three reference">
-        <h3><a href="http://obchod.svet-piva.cz">Obchod Svět-piva.cz</a><span class="year">2009</span></h3>
-
-        <p>
-            Obchod s&nbsp;výčepním zařízením, pípami a&nbsp;vybavením pro pivaře
-            má několik specifických úprav přímo na míru.
-        </p>
-    </div>
-    <div class="unit one-of-three reference">
-        <h3><a href="http://www.nakupnikosik.cz">Nakupnikosik.cz</a><span class="year">2009</span></h3>
-
-        <p>
-            Baterie, cartridge a&nbsp;tonery za výborné ceny nabízí Nákupní
-            košík. Kvůli množství zboží disponuje automatickým importem.
-        </p>
-    </div>
-
-    <div class="unit one-of-three reference">
-        <h3><a href="http://www.profiplast.eu/">Plastová okna Profiplast</a><span class="year">2009</span></h3>
-
-        <p>
-            Pro Profiplast jsem vytvořil kalkulátor ceny pro zakázková
-            plastová okna.
-        </p>
-    </div>
-
-    <div class="unit one-of-three">
-        <h3><a href="http://www.h1.cz">H1.cz</a><span class="year">2006 &rarr; 2007</span></h3>
-        <ul>
-            <li>linkuilding</li>
-        </ul>
-    </div>
-
-    <div class="unit span-grid" id="footer">
-        <p>Obrázky na stránce jsou od <a href="http://www.iconspedia.com/">iconspedia.com</a>,
-            a&nbsp;použitý CSS grid framework je <a href="http://daneden.me/toast/">Toust od Dana Edena</a></p>
-    </div>
-
-
-</div>
-</div>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-center"><a href="#top" class="btn btn-light btn-lg">Zpátky nahoru!</a></p>
+        </div>
+    </footer>
 </body>
 </html>
